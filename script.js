@@ -94,15 +94,15 @@ Real: new Intl.NumberFormat('pt-BR', {
       totalSum += item.count * item.value
 
       if(item.count > 0){
-        link += `${item.count}%20${item.name}%20Por%20Favor`
         if(link != ""){
           link += "%20E%20"
         }
+        link += `${item.count}%20${item.name}%20Por%20Favor`
       }
     });
     if(totalSum > 0){
       link += `no%20total%20de%20R%24%3A${totalSum}%20`
-      this.linkWhats = `https://wa.me/556781248764?text=Boa%20Noite%20me%20ve%20` + link
+      this.linkWhats = `https://wa.me/556781248764?text=Boa%20Noite%20vou%20querer%20` + link
       linkHtml.href = this.linkWhats;
     }
 
